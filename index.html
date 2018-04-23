@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="scroll-lock" lang="pl">
+<head>
+	<title>CS:GO COIN FLIP</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="scroll-lock">
+<div class="to-small .scroll-lock">
+	<h1>Screen is to small</h1>
+	<p>Change your resolution</p> 
+	<div class="dots">
+		<div class="dot1"></div>
+		<div class="dot2"></div>
+		<div class="dot3"></div>
+	</div>
+</div>
+	<!--   					SOUNDS                   -->
+
+	<audio src="sound/btn-sound.wav" class="btn-sound"></audio>
+	<audio src="sound/shot.wav" class="shot"></audio>
+	<audio src="sound/spin.wav" class="spin-sound"></audio>
+	<audio src="sound/background-sound.mp3" loop autoplay class="bg-audio"></audio>
+	<audio src="sound/bg-music.mp3" loop autoplay class="bg-audio2"></audio>
+	<div class="volume"><div class="volume-on volume-off"></div> </div>
+
+
+	<!--				   LOADER
+
+			 <div class="loader-ctn">
+				<div class="loader-header">
+					<h1>Game is loading</h1>
+					<div class="dots">
+						<div class="dot1"></div>
+						<div class="dot2"></div>
+						<div class="dot3"></div>
+					</div>
+				</div>
+				<div class="loader">
+					<div class="gradient-loader"></div>
+				</div>
+			</div> 					-->
+
+	<!-- 				  SLIDE BOX                      -->
+
+		<div class="slide-box-facebook">
+			<div class="slide-box-content-facebook">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FCSGLOB&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+			<div class="slide-box-label-facebook"></div>
+		</div>
+
+		<div class="slide-box-google">
+			<div class="slide-box-content-google">
+				<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fweb.facebook.com%2FCSGLOB&tabs=timeline&width=340&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="100%" height="100%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+			</div>
+			<div class="slide-box-label-google"></div>
+		</div>
+
+	<!--         MAIN CONTENT                     -->
+
+	<div class="content">
+		<div class="game-cnt">
+			<!-- <h1>CS:GO COIN FLIP</h1>  -->
+			<div class="game-screan">
+				<div id="coin">
+							<div class="side-a"></div>
+							<div class="side-b"></div>
+				</div>
+				<div class="header">
+					<h2 class="header-h2">COINFLIP</h2><p class="header-p">- Easy Wins -</p>
+				</div>
+				<div class="massages"></div>
+				<div class="bg-wrap">
+					<div class="highlight-right"></div>
+					<div class="highlight-left"></div>
+					<img class="logo-left" src="img/logo-left.png" alt="logo-left">
+					<img class="logo-right" src="img/logo-right.png" alt="logo-right">
+					<img class="char-left" src="img/char-left.png" alt="char-left">
+					<img class="char-right" src="img/char-right.png" alt="char-right">
+				</div>
+
+				<input class="money" name="money" readonly="readonly" value="1000">
+				<input class="bet" readonly="readonly" name="bet" value="50">
+				<div class="bet-box">
+					<div class="bet-buttons">
+						<input type="button" readonly="readonly" class="betplus" readonly="readonly" name="bet" value="50">
+						<input type="button" readonly="readonly" class="betmore" name="bet" value="200">
+						<input type="button" readonly="readonly" class="betminus" name="bet" value="50">
+					</div>
+				</div>
+
+			</div>
+
+				<div class="checkboxs">
+					<input type="checkbox" class="black" name="black"><label for="black" class="label-1">Counter-Terrorist</label>
+					<input type="checkbox" class="white" name="white"><label for="white" class="label-2">Terrorist</label>
+				</div>
+					<input type="button" value="FLIP!" class="flip">
+
+			</div>
+
+		</div>
+	</div>
+
+	<script src="js.js"></script>
+
+</body>
+</html>
